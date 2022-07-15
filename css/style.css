@@ -564,6 +564,7 @@ body {
 .footer-blocks {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-contacts {
@@ -620,7 +621,39 @@ body {
   fill: currentColor;
   align-self: center;
 }
-
+.email-input {
+color: var(--primary-white-color);
+}
+.email-input form {
+  display: flex;
+}
+.subscribe-email{
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 15px;
+  margin-right: 12px;
+  color: var(--primary-white-color);
+  transition: border var(--effect-duration) var(--timing-function);
+}
+.subscribe-email:focus {
+  border: 1px solid var(--accent-color);
+}
+.subscribe-email::placeholder{
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
 /* Projects */
 
 .projects {
